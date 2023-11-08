@@ -21,11 +21,11 @@
   .cafetera {
     position: absolute;
     top: 90px;
-    left: 180px;
+    left: 140px;
     width: 210px;
     height: 300px;
     border: 1px solid orange;
-    z-index: -1
+    z-index: -5
   }
 
   .bustello {
@@ -72,7 +72,7 @@
   }
 
   .cup {
-    border: 1px solid black;
+    border: 1px solid white;
     width: 88px;
     height: 92px;
     background-color: white;
@@ -84,14 +84,45 @@
     position: absolute;
     top: 350px;
     left: 100px;
+    border-radius: 10%;
+    z-index: -2;
 
   }
 
+  .top-oval3 {
+    top: -16%;
+    border: 3px solid white;
+    background-color: #3659ad;
+    z-index: -1;
+  }
+  
+  .bottom-oval3 {
+    background-color: white;
+    border: 2px solid silver;
+    bottom: -8%;
+    z-index: -1
+  }
+  
   .stacked-cup2 {
     position: absolute;
+    border: 1px solid black;
     top: 260px;
     left: 100px;
-    z-index: -5;
+    z-index: -1;
+    border-radius: 10%;
+  }
+
+  .top-oval2 {
+    background-image: linear-gradient(#c9c6c8 20%, #feffff 54%);
+    top: -10%;
+    z-index: -1;
+  }
+  
+  .bottom-oval2 {
+    background-color: white;
+    border: 3px solid black;
+    bottom: -11%;
+    z-index: -1
   }
 
   .alt3 {
@@ -104,7 +135,7 @@
     position: relative;
     overflow: hidden;
     top: 90px;
-    left: 320px;
+    left: 300px;
     z-index: 10;
   }
 
@@ -142,7 +173,7 @@
 
   .alt {
     position: absolute;
-    top: 5%;
+    top: 	 5%;
     left: 60%;
 
   }
@@ -166,9 +197,13 @@
     <div class="oval bottom-oval"></div>
   </div>
   <div class="cup stacked-cup1">
+    <div class="oval top-oval3"></div>
+    <div class="oval bottom-oval3"></div>
     <div class="stripes"></div>
   </div>
   <div class="cup stacked-cup2">
+    <div class="oval top-oval2"></div>
+    <div class="oval bottom-oval2"></div>
     <div class="stripes alt3"></div>
   </div>
   <div class="cup flag">
