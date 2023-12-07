@@ -47,6 +47,18 @@
     z-index: -2;
 
   }
+  
+  .handle {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+    background-color: black;
+    left: 43%;
+    top: -60%;
+    z-index: -5;
+    transform: rotate(18odeg);
+  }
 
 /*   .lid {
     position: absolute;
@@ -509,9 +521,10 @@
 
 
 <div class="frame">
-  <div class="lid"></div>
   <div class="cafetera">
-    <div class="line"></div>
+    <div class="line">
+      <div class="handle"></div>
+    </div>
     <div class="panel one"></div>
     <div class="panel two"></div>
     <div class="panel three"></div>
