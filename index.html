@@ -32,30 +32,30 @@
     width: 210px;
     height: 300px;
     z-index: -20;
+    
   }
 
   .line {
-    position: relative;
+    position: absolute;
     width: 210px;
-    height: 5px;
+    height: 50px;
     background-color: rgb(255, 145, 0);
     left: -2%;
-    top: 1%;
+    top: -7%;
+    border: 5px solid rgb(255, 145, 0);
+    border-radius: 40%;
+    z-index: -2;
 
   }
 
-    .lid {
-    position: relative;
-    clip-path: ellipse(25% 40% at 50% 50%);
-    background-color: purple;
-    width: 70%;
-    height 70%;
-    top: 100px;
-    left: 0px;
-    ;
-    
-    
-  }
+/*   .lid {
+    position: absolute;
+    width: 100vh;
+    height 50px;
+    top: 5%;
+    background-color: orange;
+
+  } */
 
   .panel {
     position: absolute;
@@ -110,9 +110,9 @@
     background-color: black;
     outline-style: 5px solid;
     outline-color: hsl(34, 47%, 69%);
-    left: 29%;
-    top: -5%;
-    transform: rotateZ(3deg) rotateY(8deg) rotateX(-65deg);
+    left: 30%;
+    top: -6%;
+    transform: rotateZ(0deg) rotateY(6deg) rotateX(-65deg);
     z-index: 10;
   }
 
@@ -258,7 +258,7 @@
     background-color: rgb(255, 250, 0);
     top: -10%;
     border: 5px solid rgb(255, 243, 0);
-    z-index: ;
+/*     z-index: ; */
   }
 
   .bottom-oval {
@@ -509,9 +509,9 @@
 
 
 <div class="frame">
+  <div class="lid"></div>
   <div class="cafetera">
     <div class="line"></div>
-    <div class="lid"></div>
     <div class="panel one"></div>
     <div class="panel two"></div>
     <div class="panel three"></div>
@@ -532,7 +532,6 @@
       <div class="red"></div>
       <div class="verse"></div>
     </div>
-
     <div class="oval top-oval"></div>
     <div class="oval bottom-oval"></div>
     <div class="red-box">
