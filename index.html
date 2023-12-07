@@ -128,7 +128,7 @@
     position: absolute;
     top: 220px;
     left: 140px;
-    border: ;
+/*     border: ; */
     z-index: 2;
   }
 
@@ -203,6 +203,31 @@
     top: 24%;
     left: -12%;
     transform: rotateY(60deg);
+    
+  }
+  
+  .triang1 {
+    position: absolute;
+    width: 20%;
+    height: 10%;
+    background-color: red;
+    clip-path: polygon(0 0, 0 100%, 85% 50%);
+    transform: rotate(90deg) rotateY(-20deg);
+    top: 30%;
+    left: 0%;
+    z-index: 4;
+  }
+  
+  .triang2 {
+    position: absolute;
+    width: 10%;
+    height: 15%;
+    background-color: rgb(0, 0, 82);
+    clip-path: polygon(0 0, 0 100%, 85% 50%);
+    transform: rotate(270deg) rotateY(-20deg);
+    top: 25%;
+    left: 5%;
+    z-index: 3;
     
   }
 
@@ -487,6 +512,8 @@
       <div class="yellow-text lo">
         <h2>LO</h2>
       </div>
+      <div class="triang1"></div>
+      <div class="triang2"></div>
       <div class="red"></div>
       <div class="verse"></div>
     </div>
