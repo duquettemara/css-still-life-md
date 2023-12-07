@@ -45,18 +45,18 @@
 
   }
   
-  .lid {
-    position: absolute;
+/*   .lid {
+    position: relative;
     clip-path: ellipse(50% 35% at 51% 62%);
     background-color: blue;
-    width: 100%;
-    height 100%;
-    top: 0px;
+    width: 70%;
+    height 70%;
+    top: -100px;
     left: 0px;
-/*     z-index: ; */
+    z-index: ;
     
     
-  }
+  } */
 
   .panel {
     position: absolute;
@@ -97,9 +97,9 @@
     color: pink;
     width: 100%;
     height: 100%;
-    left: 50%;
+    left: 30%;
     top: 20%;
-     z-index: 50; 
+    z-index: 3; 
 
   }  */
 
@@ -111,9 +111,9 @@
     background-color: black;
     outline-style: 5px solid;
     outline-color: hsl(34, 47%, 69%);
-    left: 20%;
-    top: -1%;
-    transform: rotateZ(10deg) rotateY(12deg) rotateX(-70deg);
+    left: 29%;
+    top: -5%;
+    transform: rotateZ(3deg) rotateY(8deg) rotateX(-65deg);
     z-index: 10;
   }
 
@@ -129,14 +129,14 @@
     top: 220px;
     left: 140px;
     border: ;
-    z-index: 1;
+    z-index: 2;
   }
 
   .right-can {
     position: absolute;
     top: 170px;
     left: 270px;
-    z-index: -1;
+    z-index: 0;
   }
 
   .red-yellow {
@@ -145,7 +145,6 @@
     background-image: linear-gradient(#ffff00 75%, #ff2600 0%);
     border-radius: 6%;
     overflow: clip;
-
   }
 
   .red {
@@ -182,7 +181,20 @@
     right: -10%;
     transform: rotateY(150deg) rotateX(180deg) rotateZ(-4deg);
 
-
+  }
+  
+  .yellow-text {
+    position: absolute;
+    font-family: Gluten;
+    color: rgb(0, 0, 82);
+    font-size: 40px;
+  }
+  
+  .ca {
+    left: 75%;
+    transform: rotateY(50deg);
+    z-index: 0;
+    
   }
 
   .oval {
@@ -347,20 +359,6 @@
     /*     z-index: ; */
   }
 
-  /*   .inside {
-    position: relative;
-    width: 60%;
-    height: 60%;
-    background: rgb(56,56,59);
-    background: radial-gradient(circle, rgba(56,56,59,1) 0%, rgba(97,97,107,1) 62%, rgba(139,143,144,1) 94%);
-    z-index: ;
-    left: 10%;
-    top: 18%;
-    
-    
-    
-  } */
-
   .bottom-oval2 {
     background-color: #eef3ff;
     border: 3.5px solid hsl(34, 0%, 13%);
@@ -473,10 +471,14 @@
     <div class="opening"></div> 
   </div>
   <div class="bustello left-can">
-    <div class="red-yellow">
+    <div class="red-yellow left">
+      <div class="yellow-text ca">
+        <h2>CA</h2>
+      </div>
       <div class="red"></div>
       <div class="verse"></div>
     </div>
+    
     <div class="oval top-oval"></div>
     <div class="oval bottom-oval"></div>
     <div class="red-box">
@@ -506,14 +508,12 @@
   </div>
   <div class="cup stacked-cup2">
     <div class="oval top-oval2">
-      <!--       <div class="oval top-oval2 inside"></div> -->
     </div>
     <div class="oval bottom-oval2"></div>
     <div class="stripes alt3"></div>
   </div>
   <div class="cup flag">
     <div class="oval top-oval4">
-      <!--       <div class="oval top-oval4 inside"></div> -->
     </div>
     <div class="oval bottom-oval4"></div>
     <div class="stripe-container">
