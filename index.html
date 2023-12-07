@@ -27,11 +27,44 @@
   .cafetera {
     position: absolute;
     top: 90px;
-    left: 140px;
+    left: 160px;
     width: 210px;
     height: 300px;
-    border: 1px;
+/*     border: 1px solid orange; */
     z-index: -20;
+  }
+  
+  .panel {
+    position: absolute;
+    width: 70px;
+    height: 160px;
+    background-color: orange;
+    border: 3px solid rgb(255, 145, 0)
+  }
+  
+  .one {
+    right: 74%;
+    transform: rotateY(60deg) rotateX(5deg);
+  }
+  
+  .two {
+    right: 55%;
+    transform: rotateY(45deg) rotateX(5deg);
+    
+  }
+  
+  .three {
+    width: 60px;
+    right: 35%;
+    transform: rotateY(-5deg) rotateX(-5deg);
+    
+  }
+  
+  .four {
+    width: 60px;
+    right: 9%;
+    transform: rotateY(-30deg) rotateX(-4deg);
+    
   }
 
   .bustello {
@@ -357,7 +390,12 @@
 
 
 <div class="frame">
-  <div class="cafetera"></div>
+  <div class="cafetera">
+    <div class="panel one"></div>
+    <div class="panel two"></div>
+    <div class="panel three"></div>
+    <div class="panel four"></div>
+  </div>
   <div class="bustello left-can">
     <div class="red-yellow">
       <div class="red"></div>
